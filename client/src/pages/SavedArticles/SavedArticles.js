@@ -44,10 +44,12 @@ export default class SavedArticles extends Component {
       <Container fluid>
         <Row>
           <Col size="sm-10" offset='sm-1'>
-            <Jumbotron>
+            <div className="container-fluid banner-bg">
+            <Jumbotron className="jumbotron">
               <H1 className="text-center">Saved New York Times Articles</H1>
               <hr style={{width: '60%'}}/>
             </Jumbotron>
+            </div>
             <Panel>
               <PanelHeading>
                 <H3>Saved Articles</H3>
@@ -56,6 +58,7 @@ export default class SavedArticles extends Component {
                 { this.state.savedArticles.length > 0 ?
                   (this.state.savedArticles.map((article, i) => (
                     <Article
+                      className="btn btn-danger"
                       key={i}
                       title={article.title}
                       url={article.url}

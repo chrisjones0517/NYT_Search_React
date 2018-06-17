@@ -1,0 +1,43 @@
+body {
+    background-image: url('./light-veneer.png');
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.home-banner {
+    background-image: url('./nytLogo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.jumbotron {
+    position: relative;
+    background-color: transparent;
+}
+
+.banner-bg {
+    background-image: url('./lightgreen-bg.png');    
+}
+
+.home-banner-sub-heading {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -18rem;
+}
+
+.logo-link {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.logo-link:hover {
+    color: #428bca;
+    text-decoration-line: none;
+}
+
+.article-box {
+    box-shadow: 2px 5px 5px #777, -2px 5px 5px #777;
+}

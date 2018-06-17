@@ -122,10 +122,12 @@ export default class Articles extends Component {
       <Container fluid>
         <Row>
           <Col size="sm-10" offset='sm-1'>
-            <Jumbotron>
-              <H1 className='page-header text-center'>New York Times Article Searcher</H1>
-              <H4 className='text-center'>Search for and save articles of interest</H4>
+            <div className="container-fluid banner-bg">
+            <Jumbotron className="jumbotron home-banner">
+              {/* <H1 className='page-header text-center'>New York Times Article Searcher</H1> */}
+              <H4 className='home-banner-sub-heading'>Search for and save articles of interest</H4>
             </Jumbotron>
+            </div>
             <Panel>
               <PanelHeading>
                 <H3>Search</H3>
@@ -181,6 +183,7 @@ export default class Articles extends Component {
                     {
                       this.state.results.map((article, i) => (
                           <Article
+                            className="btn btn-success"
                             key={i}
                             title={article.headline.main}
                             url={article.web_url}
